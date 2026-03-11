@@ -42,10 +42,10 @@ return {
   keyword    = "#87afff",
   Function   = "#caeb82",
   string     = "#87d75f",
-  constant   = "#d7875f",
+  constant   = "#87d75f",
   Type       = "#caeb82",
-  number     = "#d7875f",
-  boolean    = "#d7875f",
+  number     = "#87d75f",
+  boolean    = "#87d75f",
   operator   = "#87afff",
   variable   = "#d7875f",
 
