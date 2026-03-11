@@ -1,25 +1,26 @@
 return {
-  -- sunset.nvim colors
-  red = "#ff3d00",
-  orange = "#e58e44",
-  green = "#77b886",
-  yellow = "#f7cb92",
-  blue = "#7689d9",
-  magenta = "#8f509d",
-  cyan = "#8fb9f4",
+  -- colors
+  red = "#dc2626",
+  orange = "#f59e0b",
+  green = "#65a30d",
+  yellow = "#fde047",
+  blue = "#3b82f6",
+  magenta = "#c026d3",
+  cyan = "#0891b2",
+
+  bright_red = "#f87171",
+  bright_orange = "#fcd34d",
+  bright_green = "#a3e635",
+  bright_yellow = "#fef9c3",
+  bright_blue = "#93c5fd",
+  bright_magenta = "#e879f9",
+  bright_cyan = "#22d3ee",
+
   black = "#000000",
-  bright_red = "#ff6347",
-  bright_orange = "#f6aa6b",
-  bright_green = "#a3d6a5",
-  bright_yellow = "#ffe56e",
-  bright_blue = "#9eabe6",
-  bright_magenta = "#b78fc2",
-  bright_cyan = "#a4c4ff",
   white = "#ffffff",
-  gutter_fg = "#78808f",
   nontext = "#d2d6dc",
 
-  -- wasabi colors
+  -- UI
   bg           = "#000000",
   fg           = "#cccccc",
   end_bg       = "#1c1c1c", -- end of buffer area
@@ -27,28 +28,30 @@ return {
   cursorlinenr = "#ffff87",
   linenr       = "#626262",
   selection    = "#1c1c1c",
-  comment      = "#7d88a1",
+  comment      = "#4e4e4e",
+  cursor       = "#f4b87e",
+  visual       = "#2e3c55",
+  search       = "#ffffaf",
+  statusline   = "#1e293b",
+  menu_bg      = "#1a2535",
+  menu_sel     = "#3b4252",
+  fold         = "#3e4a5a",
+  split        = "#334155",
 
   -- Syntax
-  keyword    = "#f28fad",
-  Function   = "#89b4fa",
-  string     = "#f9e2af",
-  constant   = "#cdd6f4",
-  type       = "#cba6f7",
-  number     = "#fab387",
-  boolean    = "#f38ba8",
-  operator   = "#94a3b8",
-  variable   = "#e0def4",
+  keyword    = "#87afff",
+  Function   = "#caeb82",
+  string     = "#87d75f",
+  constant   = "#e5786d",
+  type       = "#caeb82",
+  number     = "#e5786d",
+  boolean    = "#e5786d",
+  operator   = "#87afff",
+  variable   = "#e5786d",
 
-  -- UI
-  cursor     = "#f5a97f",
-  visual     = "#2e3c55",
-  search     = "#f5c2e7",
-  statusline = "#1e293b",
-  menu_bg    = "#1a2535",
-  menu_sel   = "#3b4252",
-  fold       = "#3e4a5a",
-  split      = "#334155",
+  -- Spell
+  spell      = "#dd0000",
+  spell_bg   = "#121212",
 
   -- Diagnostics
   diag_error = "#f38ba8",

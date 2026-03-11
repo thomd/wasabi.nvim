@@ -18,7 +18,7 @@ local visual = {
 
 local inactive = {
   a = { fg = colors.fg, bg = colors.visual, gui = "bold" },
-  b = { fg = colors.gutter_fg, bg = colors.bg },
+  b = { fg = colors.fg, bg = colors.bg },
 }
 
 local replace = {
