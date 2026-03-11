@@ -39,11 +39,12 @@ M.setup = function()
     Error = { fg = colors.bright_red },
     Todo = { fg = colors.magenta, bold = true, italic = true },
     Underlined = { fg = colors.cyan, underline = true },
+    EndOfBuffer = { fg = colors.linenr, bg = colors.end_bg },
 
     Cursor = { fg = colors.cursor },
-    CursorLineNr = { fg = colors.fg, bold = true },
+    CursorLineNr = { fg = colors.cursorlinenr, bg = colors.end_bg },
 
-    SignColumn = { bg = colors.bg },
+    SignColumn = { bg = colors.end_bg },
 
     Conceal = { fg = colors.comment },
     CursorColumn = { bg = colors.black },
@@ -68,7 +69,7 @@ M.setup = function()
     FoldColumn = {},
     Search = { fg = colors.black, bg = colors.number },
     IncSearch = { fg = colors.number , bg = colors.comment },
-    LineNr = { fg = colors.comment },
+    LineNr = { fg = colors.linenr, bg = colors.end_bg },
     MatchParen = { fg = colors.fg, underline = true },
     NonText = { fg = colors.nontext },
     Pmenu = { fg = colors.white, bg = colors.menubg },
@@ -328,6 +329,10 @@ M.setup = function()
 
     -- WinPicker
     WinPicker = { fg = colors.bg, bg = colors.number },
+
+    -- indent-blankline.nvim
+    IblIndent = { fg = colors.cursorline },
+    IblScope  = { fg = colors.cursorline },
   }
 end
 

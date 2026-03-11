@@ -3,7 +3,7 @@ return {
   red = "#ff3d00",
   orange = "#e58e44",
   green = "#77b886",
-  yellow = "#f7cb92", -- modded to be more of a peach color
+  yellow = "#f7cb92",
   blue = "#7689d9",
   magenta = "#8f509d",
   cyan = "#8fb9f4",
@@ -18,15 +18,16 @@ return {
   white = "#ffffff",
   gutter_fg = "#78808f",
   nontext = "#d2d6dc",
-  
-  -- my colors (not all are used as of 07/07/25)
-  
-  bg = "#0f1c2e",
-  fg         = "#e6e8ee",
-  cursorline = "#1c2b3a",
-  selection  = "#2e3c55",
-  linenr     = "#4a5a70",
-  comment    = "#7d88a1",
+
+  -- wasabi colors
+  bg           = "#000000",
+  fg           = "#cccccc",
+  end_bg       = "#1c1c1c", -- end of buffer area
+  cursorline   = "#2c2c2c",
+  cursorlinenr = "#ffff87",
+  linenr       = "#626262",
+  selection    = "#1c1c1c",
+  comment      = "#7d88a1",
 
   -- Syntax
   keyword    = "#f28fad",
