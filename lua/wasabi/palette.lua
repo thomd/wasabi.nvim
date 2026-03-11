@@ -42,12 +42,12 @@ return {
   keyword    = "#87afff",
   Function   = "#caeb82",
   string     = "#87d75f",
-  constant   = "#e5786d",
+  constant   = "#d7875f",
   Type       = "#caeb82",
-  number     = "#e5786d",
-  boolean    = "#e5786d",
+  number     = "#d7875f",
+  boolean    = "#d7875f",
   operator   = "#87afff",
-  variable   = "#e5786d",
+  variable   = "#d7875f",
 
   -- Spell
   spell      = "#dd0000",
