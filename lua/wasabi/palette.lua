@@ -43,7 +43,7 @@ return {
   Function   = "#caeb82",
   string     = "#87d75f",
   constant   = "#e5786d",
-  type       = "#caeb82",
+  Type       = "#caeb82",
   number     = "#e5786d",
   boolean    = "#e5786d",
   operator   = "#87afff",
