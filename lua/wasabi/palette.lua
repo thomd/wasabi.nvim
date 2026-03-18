@@ -73,9 +73,9 @@ return {
   text           = "#dddddd",
   link           = "#87afff",
   headline       = "#87d75f",
-  table_head     = "#cbff74",
   table_border   = "#808080",
   code           = "#808080",
+  code_bg        = "#1a1a1a",
   list           = "#d7875f",
   cite           = "#d7875f",
 }
