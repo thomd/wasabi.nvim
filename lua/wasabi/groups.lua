@@ -41,12 +41,12 @@ M.setup = function()
     Error = { fg = colors.red },
     Todo = { fg = colors.black, bg = colors.orange },
     Underlined = { fg = colors.white, underline = true },
-    EndOfBuffer = { fg = colors.linenr, bg = colors.end_bg },
+    EndOfBuffer = { fg = colors.linenr, bg = colors.gray_9 },
 
     Cursor = { fg = colors.cursor },
-    CursorLineNr = { fg = colors.cursorlinenr, bg = colors.end_bg },
+    CursorLineNr = { fg = colors.cursorlinenr, bg = colors.gray_9 },
 
-    SignColumn = { bg = colors.end_bg },
+    SignColumn = { bg = colors.gray_9 },
 
     Conceal = { fg = colors.comment },
     CursorColumn = { bg = colors.black },
@@ -71,7 +71,7 @@ M.setup = function()
     FoldColumn = {},
     Search = { fg = colors.black, bg = colors.search },
     IncSearch = { fg = colors.comment },
-    LineNr = { fg = colors.linenr, bg = colors.end_bg },
+    LineNr = { fg = colors.linenr, bg = colors.gray_9 },
     MatchParen = { fg = colors.fg, underline = true },
     NonText = { fg = colors.nontext },
     Pmenu = { fg = colors.white, bg = colors.menubg },
@@ -155,7 +155,10 @@ M.setup = function()
     ["@text.emphasis"] = { fg = colors.fg, italic = true }, -- italic
     ["@text.underline"] = { fg = colors.fg, underline = true },
     ["@text.title"] = { fg = colors.string, bold = true }, -- title
-    ["@text.literal"] = { fg = colors.string }, -- inline code
+    ["@text.literal"] = { fg = colors.gray_5 }, -- inline code
+    ["@markup.raw"] = { fg = colors.gray_5 }, -- inline code (new capture)
+    ["@markup.raw.block"] = { fg = colors.gray_5 }, -- code blocks
+    ["@punctuation.special.markdown"] = { fg = colors.gray_5 }, -- table borders
     ["@text.uri"] = { fg = colors.string, italic = true }, -- urls
     ["@text.reference"] = { fg = colors.constant, bold = true },
 
@@ -278,14 +281,14 @@ M.setup = function()
     NvimTreeRootFolder = { fg = colors.bright_blue },
     NvimTreeGitDirty = { fg = colors.bright_blue },
     NvimTreeGitNew = { fg = colors.bright_blue },
-    NvimTreeImageFile = { fg = colors.white },
+    NvimTreeImageFile = { fg = colors.fg },
     NvimTreeFolderIcon = { fg = colors.bright_blue },
     NvimTreeIndentMarker = { fg = colors.fg },
     NvimTreeEmptyFolderName = { fg = colors.bright_blue },
     NvimTreeFolderName = { fg = colors.bright_blue },
-    NvimTreeSpecialFile = { fg = colors.white },
+    NvimTreeSpecialFile = { fg = colors.fg },
     NvimTreeOpenedFolderName = { fg = colors.bright_blue },
-    NvimTreeCursorLine = { bg = colors.end_bg },
+    NvimTreeCursorLine = { bg = colors.gray_9 },
     NvimTreeIn = { fg = colors.fg },
     NvimTreeOpenedFile = { fg = colors.bright_yellow },
     NvimTreeGitFileDirtyHL = { fg = colors.fg },
@@ -302,12 +305,12 @@ M.setup = function()
     NvimTreeGitFolderStagedHL = { fg = colors.bright_blue },
     NvimTreeGitFolderDeletedHL = { fg = colors.bright_blue },
     NvimTreeGitFolderIgnoredHL = { fg = colors.bright_blue },
-    NvimTreeSymlink = { fg = colors.white },
+    NvimTreeSymlink = { fg = colors.fg },
     NvimTreeSymlinkFolderName = { fg = colors.bright_blue },
     NvimTreeSymlinkIcon = { fg = colors.bright_blue },
-    NvimTreeExecFile = { fg = colors.white },
-    NvimTreeSocket = { fg = colors.white },
-    NvimTreePipe = { fg = colors.white },
+    NvimTreeExecFile = { fg = colors.fg },
+    NvimTreeSocket = { fg = colors.fg },
+    NvimTreePipe = { fg = colors.fg },
 
     -- indent-blankline.nvim
     IblIndent = { fg = colors.cursorline },

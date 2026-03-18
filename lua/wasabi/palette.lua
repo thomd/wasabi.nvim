@@ -1,3 +1,5 @@
+-- cat lua/wasabi/palette.lua | awk '/=/{system("pastel paint black --on " substr($3, 3, 6) " " $1 " ")}'
+--
 return {
   -- colors
   red            = "#dc2626",
@@ -18,14 +20,23 @@ return {
   bright_cyan    = "#22d3ee",
   bright_gray    = "#d1d5db",
 
-  black          = "#000000",
   white          = "#ffffff",
+  gray_1         = "#e6e6e6",
+  gray_2         = "#cccccc",
+  gray_3         = "#b3b3b3",
+  gray_4         = "#999999",
+  gray_5         = "#808080",
+  gray_6         = "#666666",
+  gray_7         = "#4d4d4d",
+  gray_8         = "#333333",
+  gray_9         = "#1a1a1a",
+  black          = "#000000",
+
   nontext        = "#d2d6dc",
 
   -- UI
   bg             = "#000000",
-  fg             = "#cccccc",
-  end_bg         = "#1c1c1c", -- end of buffer area
+  fg             = "#dddddd",
   cursorline     = "#2c2c2c",
   cursorlinenr   = "#ffff87",
   linenr         = "#626262",
@@ -44,16 +55,27 @@ return {
 
   -- Syntax
   keyword        = "#87afff",
-  Function       = "#caeb82",
+  Function       = "#cbff74",
   string         = "#87d75f",
   constant       = "#87d75f",
-  Type           = "#caeb82",
+  Type           = "#cbff74",
   number         = "#87d75f",
   boolean        = "#87d75f",
   operator       = "#87afff",
   variable       = "#d7875f",
+  comment        = "#333333",
 
   -- Spell
   spell          = "#dd0000",
   spell_bg       = "#121212",
+
+  -- Markdown
+  text           = "#dddddd",
+  link           = "#87afff",
+  headline       = "#87d75f",
+  table_head     = "#cbff74",
+  table_border   = "#808080",
+  code           = "#808080",
+  list           = "#d7875f",
+  cite           = "#d7875f",
 }
