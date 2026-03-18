@@ -75,6 +75,7 @@ M.load = function()
   vim.g.colors_name = "wasabi"
 
   apply(M.opts)
+
 end
 
 return M

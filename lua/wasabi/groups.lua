@@ -154,13 +154,19 @@ M.setup = function()
     ["@text.strong"] = { fg = colors.fg, bold = true }, -- bold
     ["@text.emphasis"] = { fg = colors.fg, italic = true }, -- italic
     ["@text.underline"] = { fg = colors.fg, underline = true },
-    ["@text.title"] = { fg = colors.string, bold = true }, -- title
-    ["@text.literal"] = { fg = colors.gray_5 }, -- inline code
-    ["@markup.raw"] = { fg = colors.gray_5 }, -- inline code (new capture)
-    ["@markup.raw.block"] = { fg = colors.gray_5 }, -- code blocks
-    ["@punctuation.special.markdown"] = { fg = colors.gray_5 }, -- table borders
-    ["@text.uri"] = { fg = colors.string, italic = true }, -- urls
-    ["@text.reference"] = { fg = colors.constant, bold = true },
+    ["@text.title"] = { fg = colors.headline, bold = true }, -- title
+    ["@markup.heading"] = { fg = colors.headline, bold = true }, -- title (new capture)
+    ["@text.literal"] = { fg = colors.code }, -- inline code
+    ["@markup.raw"] = { fg = colors.code }, -- inline code (new capture)
+    ["@markup.raw.block"] = { fg = colors.code }, -- code blocks
+    ["@punctuation.special.markdown"] = { fg = colors.table_border }, -- table borders
+    ["@text.uri"] = { fg = colors.link, underline = false }, -- urls
+    ["@markup.link.url"] = { fg = colors.link, underline = false }, -- urls (new capture)
+    ["@markup.link"] = { fg = colors.link, underline = false }, -- link text
+    ["@markup.link.label"] = { fg = colors.link, underline = false }, -- link labels
+    ["@text.reference"] = { fg = colors.link, bold = true },
+    ["@markup.list"] = { fg = colors.list }, -- list markers
+    ["@markup.quote"] = { fg = colors.cite }, -- blockquotes
 
     ["@tag"] = { fg = colors.keyword },
     ["@tag.attribute"] = { fg = colors.keyword },
@@ -239,23 +245,30 @@ M.setup = function()
     markdownRule = { fg = colors.comment },
 
     -- render-markdown.nvim
-    RenderMarkdownH1 = { fg = colors.green, bold = true },
-    RenderMarkdownH2 = { fg = colors.green, bold = true },
-    RenderMarkdownH3 = { fg = colors.green, bold = true },
-    RenderMarkdownH4 = { fg = colors.green, bold = true },
-    RenderMarkdownH5 = { fg = colors.green, bold = true },
-    RenderMarkdownH6 = { fg = colors.green, bold = true },
-    RenderMarkdownH1Bg = { fg = colors.green, bold = true },
-    RenderMarkdownH2Bg = { fg = colors.green, bold = true },
-    RenderMarkdownH3Bg = { fg = colors.green, bold = true },
-    RenderMarkdownH4Bg = { fg = colors.green, bold = true },
-    RenderMarkdownH5Bg = { fg = colors.green, bold = true },
-    RenderMarkdownH6Bg = { fg = colors.green, bold = true },
-    RenderMarkdownLink = { fg = colors.fg, underline = true },
-    RenderMarkdownBold = { fg = colors.fg, bg = colors.bright_gray, bold = true },
-    RenderMarkdownNormal = { fg = colors.fg },
-    RenderMarkdownCode = { fg = colors.bright_yellow, bg = colors.cursorline },
-    RenderMarkdownCodeInline = { fg = colors.bright_yellow, bg = colors.cursorline },
+    RenderMarkdownH1 = { fg = colors.headline, bold = true },
+    RenderMarkdownH2 = { fg = colors.headline, bold = true },
+    RenderMarkdownH3 = { fg = colors.headline, bold = true },
+    RenderMarkdownH4 = { fg = colors.headline, bold = true },
+    RenderMarkdownH5 = { fg = colors.headline, bold = true },
+    RenderMarkdownH6 = { fg = colors.headline, bold = true },
+    RenderMarkdownH1Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownH2Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownH3Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownH4Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownH5Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownH6Bg = { fg = colors.headline, bold = true },
+    RenderMarkdownLink = { fg = colors.link, underline = true },
+    RenderMarkdownBold = { fg = colors.text, bold = true },
+    RenderMarkdownNormal = { fg = colors.text },
+    RenderMarkdownCode = { fg = colors.code, bg = colors.cursorline },
+    RenderMarkdownCodeInline = { fg = colors.code, bg = colors.cursorline },
+    RenderMarkdownTableHead = { fg = colors.table_border },
+    RenderMarkdownTableRow = { fg = colors.table_border },
+    RenderMarkdownTableFill = { fg = colors.table_border },
+    RenderMarkdownTableHeadText = { fg = colors.text },
+    RenderMarkdownTableRowText = { fg = colors.text },
+    RenderMarkdownQuote = { fg = colors.cite },
+    RenderMarkdownBullet = { fg = colors.list },
 
     --  Diff
     diffAdded = { fg = colors.orange },
