@@ -1,7 +1,11 @@
--- cat lua/wasabi/palette.lua | awk '/=/{system("pastel paint black --on " substr($3, 3, 6) " " $1 " ")}'
+-- Show Colors with:
 --
+--    cat lua/wasabi/palette.lua | awk '/=/{system("pastel paint black --on " substr($3, 3, 6) " " $1 " ")}'
+--    cat lua/wasabi/palette.lua | awk '/=/{system("pastel color " substr($3, 3, 6))}' | pastel format
+--
+
 return {
-  -- colors
+  -- base colors
   red            = "#dc2626",
   orange         = "#f59e0b",
   green          = "#65a30d",
@@ -54,16 +58,16 @@ return {
   tabline_fill   = "#1c1c1c",
 
   -- Syntax
-  keyword        = "#87afff",
-  Function       = "#cbff74",
-  string         = "#87d75f",
-  constant       = "#87d75f",
-  Type           = "#cbff74",
-  number         = "#87d75f",
-  boolean        = "#87d75f",
-  operator       = "#87afff",
-  variable       = "#d7875f",
-  comment        = "#333333",
+  keyword        = "#bad1ff",
+  Function       = "#dfffa7",
+  string         = "#a6e188",
+  constant       = "#a6e188",
+  Type           = "#dfffa7",
+  number         = "#a6e188",
+  boolean        = "#a6e188",
+  operator       = "#bad1ff",
+  variable       = "#e1a688",
+  comment        = "#6b6b6b",
 
   -- Spell
   spell          = "#dd0000",
